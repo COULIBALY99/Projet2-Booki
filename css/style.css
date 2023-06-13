@@ -1,0 +1,627 @@
+/* GENERAL */
+html,
+*
+{
+    margin:0;
+    padding:0;
+    font-family:'Raleway', sans-serif
+}
+main{
+    padding: 30px;
+    padding-top: 0;
+    max-width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+nav{
+    display:flex;
+    justify-content:space-between;
+    font-size: 10px;
+    margin-top: 26px;
+}
+ul{
+    display:flex;
+    list-style: none;
+}
+.li{
+    list-style: none;
+    width:150px;
+    text-align:center;   
+}
+.logo{
+    height: 50px;
+}
+a[href*="#1"]{
+    text-decoration: none;
+    color: #0065fc;
+    border-top: solid;
+    border-color:#0065fc;
+    padding: 20px;
+}
+a[href*="#2"]{
+    text-decoration: none;
+    color: gray;
+    padding: 20px;
+}
+.annonce{
+      margin-top: 20px;
+}
+.annonce h1{
+    font-size: 18px;
+}
+.annonce p{
+    margin-left: 0ex;
+}
+/*research*/
+.research{
+       display: flex;     
+       border-radius: 10px;
+       line-height: 50px;
+       text-align: center;
+       margin-top: 15px;      
+}
+.research > *{
+    padding: 0 5px;
+}
+.research-icon{
+    flex-basis: 50px;
+    background-color: #f2f2f2; 
+    border-radius: 15px 0 0 15px;  
+}
+.research-text{
+    flex-basis: 200px;
+    border: none; 
+    overflow: hidden; 
+}
+.research-text{
+    border:1px solid #f2f2f2;  
+}
+.research button{
+     background-color: #0065fc;
+     color: #f2f2f2;
+     border-radius: 0 10px 10px 0;
+     font-weight: bold;
+     border: none;
+     padding: 0 24px;
+     cursor: pointer; 
+     opacity: 0.9; 
+     transition: transform 200ms;
+ }
+ .research button:hover{
+     opacity: 1;
+     transform: scale(1.04);
+ }
+ .fa-search:before{
+    display: none;
+}
+.filtres{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.filtres .items{
+    display: flex;
+    align-items: center;
+    border: solid 1px #f2f2f2;
+    border-radius: 30px;
+    height: 50px;
+    margin-right: 20px;
+    margin-bottom: 15px; 
+    cursor: pointer; 
+
+}
+.filtres h2{
+    margin-right: 10px;
+}
+.filtres i{
+    text-align: center;
+    background: #deebff;
+    color: #0065fc;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    line-height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: transform 0.1s;
+    box-shadow: 0 0 15px #deebff;   
+}
+.filtres i:hover{
+    opacity: 1;
+    transform: scale(1.04);
+}
+.info i{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    background-color: #f2f2f2; 
+    color: #0065fc;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+/*HEBERGEMENTS*/
+.hebergements{
+    display: flex; 
+    margin-top: 20px;
+}
+.appartements{
+    width: 70%;
+    margin-right: 15px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+.populaires{
+    width: 30%;
+    margin-left: 15px;
+    border-radius: 20px;
+    background-color: #f2f2f2; 
+    padding: 15px;   
+}
+.zone-hebergements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15px; 
+    font-size: 13px; 
+}
+.zone-hebergements .items{
+    flex-basis: 190px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 16px#808080;
+    cursor: pointer;
+    transition: transform 200ms;
+}
+.zone-hebergements .items:hover{
+    transform: scale(1.04);
+}
+.zone-hebergements .items h3,p{
+    margin-left: 15px;
+}
+.zone-hebergements img{
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 190px;
+    aspect-ratio: auto 190 / 90;
+    height: 90px;
+    padding: 5px;
+   
+}
+.affichage{
+    margin-top: 15px;
+}
+.hebergements a{
+    text-decoration: none;
+    color: black;    
+}
+.hebergements-luxe{
+    margin-top: 20px;
+}
+.hebergements-luxe .items{
+    display: flex;
+    border-radius: 20px;
+    background-color: #ffffff;
+    font-size: 13px;
+    padding: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 16px#808080;
+    cursor: pointer;
+    transition: transform 200ms;
+}
+.hebergements-luxe .items:hover{
+    transform: scale(1.04);
+}
+.info-hebergements {
+    padding-top: 10px;
+}
+.info-hebergements p{
+    margin-left: 0;
+}
+.hebergements-luxe img{
+   border-radius: 15px 0 0 15px;
+   object-fit: cover;
+   flex-basis: 110px;
+   width: 110px;
+   aspect-ratio: auto 110/110;
+   height: 110px;
+   margin-right: 15px;
+}
+.star{
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+.stars{
+    padding-top: 30px;
+}
+.bleu{
+    color: #0065fc;
+}
+.grey{
+    color: #f2f2f2;
+}
+.fa-regular, .far{
+    font-weight: 900;
+}
+.populaires h4{
+    display: flex;
+    justify-content: space-between;      
+}
+.activites{
+    margin-top: 30px;
+}
+.activites h5{
+    font-size: 18px;
+}
+.zone-activites{
+    display: flex;
+    margin-top: 15px;   
+}
+.zone-activites div{
+    margin: 2px;
+}
+.zone-activites img{
+    border-radius: 15px 15px 0 0;  
+}
+.activites .items{
+    border-radius: 20px;
+    background-color:#ffffff;
+    padding-bottom: 10px;
+    border: solid 1px #f2f2f2;
+    box-shadow: 0 0 16px #808080;
+    cursor: pointer;
+    transition: transform 200ms;
+}
+.activites .items:hover{
+    transform: scale(1.04);
+}
+.activites .items h4{
+    margin-left: 15px;
+}
+.activites .items img{
+    object-fit: cover;
+    width: 240px;
+    aspect-ratio: auto 240 / 322;
+    height: 322px;  
+}
+.activites-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+.activites-items h4{
+    margin-left: 15px;
+}
+.activites-items div{
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    border: solid 1px #f2f2f2; 
+    box-shadow: 0 0 16px #808080; 
+    cursor: pointer;
+    transition: transform 200ms;
+}
+.activites-items div:hover{
+    transform: scale(1.04);
+}
+.activites-margin-top-0{
+    margin-top:  0 !important;
+}
+.activites-items .paul-hermann img{
+    object-fit: cover;
+    width: 240px;
+    aspect-ratio: auto 240 / 140;
+    height: 140px;
+}
+.activites-items .kevin-hikari img{
+    object-fit: cover;
+    width: 240px;
+    aspect-ratio: auto 240 / 106;
+    height: 106px;
+}
+.activites-items .florian-wehde-x img{
+    object-fit: cover;
+    width: 240px;
+    aspect-ratio: auto 240 / 120;
+    height: 120px;
+}
+.activites-items .lena-paulin img{
+    object-fit: cover;
+    width: 240px;
+    aspect-ratio: auto 240 / 120;
+    height: 120px;
+}
+.renseignement{
+    width: 100%;
+    background-color: #f2f2f2;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    justify-content: center;  
+}
+.renseignement h1{
+    font-size: 18px;
+}
+.renseignement div{
+    width: 340px;
+    height: 200px;
+    margin-top:20px ;
+    line-height: 30px;  
+}
+
+/*max-width= desktop first*/
+@media (max-width:992px){
+    .activites .items img{
+        width: 220px;
+    }
+    .activites-items .paul-hermann img{
+        width: 220px;
+    }
+    .activites-items .kevin-hikari img{
+        width: 220px;
+    }
+    .activites-items .florian-wehde-x img{
+        width: 220px;
+    }
+    .activites-items .lena-paulin img{
+        width: 220px;
+    }
+    
+        
+    }
+@media  (max-width:768px) {
+    .annonce h1{
+        font-size: 18px;
+    }
+    .hebergements{
+        flex-wrap: wrap;
+        order: 2;
+    }
+    .appartements{
+        width: 100%;
+        margin-right: 0;   
+    }
+    .populaires{
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;   
+    }
+    .info-hebergements{
+        line-height: 20px;
+    }
+    .zone-activites{
+        flex-wrap: wrap;
+    }
+    .zone-activites div{
+        margin: 5px;
+    }
+    .activites .items img{
+        width: 322px;
+        aspect-ratio: auto 322 / 370;
+        height: 370px;  
+    }
+    .activites-items .paul-hermann img{
+        width: 322px;
+        aspect-ratio: auto 322 / 160;
+        height: 190px;
+    }
+    .activites-items .kevin-hikari img{
+    width: 322px;
+    aspect-ratio: auto 322 / 125;
+    height: 125px;
+    }
+    .activites-items .florian-wehde-x img{
+    width: 322px;
+    aspect-ratio: auto 322 / 140;
+    height: 140px;
+    }
+    .activites-items .lena-paulin img{
+    width: 322px;
+    aspect-ratio: auto 322 / 140;
+    height: 140px;
+   }
+   .renseignement div{
+    margin-left:30px;
+}
+@media (max-width:700px) {
+    .annonce h1{
+        font-size: 25px;
+    }
+    .research button .search-form{
+        display: none;
+    }
+    .fa-search:before{
+        display: inline;
+        background-color: inherit;
+    }
+    .research button{
+        border-radius: 10px;
+    }
+    .filtres{
+        flex-wrap: wrap;
+    }
+    .hebergements-luxe{
+        flex-wrap: wrap;
+    }
+    .zone-activites{
+        flex-direction: column;
+    }
+    .activites .items img{
+        width: 100%;
+        height: 140px;
+    }
+    .activites-items .paul-hermann img{
+        width: 100%;
+        height: 140px;
+    }
+    .activites-items .kevin-hikari img{
+        width: 100%;
+    }
+    .activites-items .florian-wehde-x img{
+        width: 100%;
+    }
+    .activites-items .lena-paulin img{
+        width: 100%;
+    }
+    }
+
+}
+
+@media   (max-width:416px){
+    main{
+        padding: 0;
+    }
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    li{
+     text-align: center;
+     flex: 1;
+     border-bottom: 1px solid #0065fc;
+     padding-bottom: 20px;
+     margin-top: 30px;
+    }
+    a[href*="#1"]{
+    border-top: none;
+    }
+    a[href*="#"]{
+        font-weight: bold;
+    }
+    li.navlisecond{
+        border-bottom: 1px solid #f2f2f2;   
+    }
+    .annonce h1{
+        font-size: 25px;
+    }
+    .annonce p{
+        margin-left: 0;
+    }
+    .annonce{
+        margin-left: 20px;
+        
+    }
+    .research{
+        margin-left: 20px;
+    }
+    .info i{
+        margin-left: 20px; 
+    }
+    .filtres h2{
+        display: block;
+        width: 100%;
+    }
+    .filtres{
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+    .filtres .items{
+        margin-bottom: 15px;
+    }
+    .research button .search-form{
+        display: none;
+    }
+    .fa-search:before{
+        display: inline;
+        background-color: inherit;
+    }
+    .hebergements{
+        flex-direction:column-reverse;   
+    }
+    .appartements{
+        height: 100%;
+        margin-top: 40px;
+        background-color: white;
+        padding: 0;
+    }
+    .populaires{
+        padding: 0;
+        border-radius: 0;
+    }
+    .populaires h4{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    .fas.fa-chart-line{
+        margin-right:20px;
+    }
+    .info-hebergements{
+        font-size: 15px;
+        margin-left: 0;
+        padding: 0;
+        margin-top: 15px;
+    }
+    .zone-hebergements img{
+        width: 300px;
+    }
+    .appartements h3{
+        margin-left: 35px;
+    }
+    .activites h5{
+        margin-left: 40px; 
+    }
+    .affichage{
+        margin-left: 40px;
+    }
+    .hebergements-luxe img{
+        flex-basis: 120px;
+        width: 120px;
+        height: 120px;
+    }
+    .hebergements-luxe .items{
+        width: 300px;
+        margin-left: 45px;
+    }
+    .stars{
+        padding-top: 0;
+        margin-top: 15px;
+    }
+    .activites .items{
+        margin-left: 49px;
+        margin-right: 48px;
+    }
+    .activites .items img{
+        height: 125px;
+    }
+    .activites-items .paul-hermann{
+        margin-left: 45px;
+        margin-right: 44px;
+    }
+    .activites-items .paul-hermann img{
+        height: 125px;
+    }
+    .activites-items .kevin-hikari{
+        margin-left: 45px;
+        margin-right: 44px;
+    }
+    .activites-items .kevin-hikari img{
+        height: 125px;
+    }
+    .activites-items .florian-wehde-x{
+        margin-left: 45px;
+        margin-right: 44px;
+    }
+    .activites-items .florian-wehde-x img{
+        height: 125px;
+    }
+    .activites-items .lena-paulin{
+        margin-left: 45px;
+        margin-right: 44px;
+    }
+    .activites-items .lena-paulin img{
+        height: 125px;
+    }
+    .renseignement{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+        
+        
+        
+    
+}
